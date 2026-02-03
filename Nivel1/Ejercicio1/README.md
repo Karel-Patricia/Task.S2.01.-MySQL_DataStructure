@@ -100,4 +100,5 @@ These queries confirm that the relationships between tables are correctly implem
 ## 🛠️ Technologies
 - MySQL – Database engine
 - MySQL Workbench – Database modeling and SQL execution
+- Docker – Containerized MySQL environment for consistent local development
 - Git & GitHub 
