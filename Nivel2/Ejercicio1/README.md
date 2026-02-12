@@ -71,3 +71,14 @@ referential integrity and core business rules.
 - Docker – Containerized MySQL environment for consistent local development
 - Git & GitHub 
 
+## 🚀 Installation & Execution
+
+Prerequisites
+
+Ensure the following tools are installed on your system:
+- Docker (recommended for consistent environment)
+- MySQL Workbench (or any MySQL client)
+- Git (optional)
+
+Clone the Repository: git clone https:
+- //github.com/Karel-Patricia/Task.S2.01.-MySQL_DataStructure.git
