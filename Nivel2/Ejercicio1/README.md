@@ -2,7 +2,7 @@
 
 ## 📌 Level 2
 
-**Description**:\
+### Description
 
 This project implements a simplified relational database model of a
 reduced YouTube-like platform. The objective is to design and validate a
