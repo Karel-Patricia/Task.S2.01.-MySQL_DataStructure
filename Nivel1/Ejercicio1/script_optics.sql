@@ -71,6 +71,21 @@ CREATE TABLE sale (
         CONSTRAINT fk_sale_glasses FOREIGN KEY (glasses_id) REFERENCES glasses(glasses_id)
 );
 
+ALTER TABLE sale DROP FOREIGN KEY fk_sale_glasses;
+
+ALTER TABLE sale DROP COLUMN glasses_id;
+
+CREATE TABLE sale_details (
+    sale_detail_id INT AUTO_INCREMENT PRIMARY KEY,
+    sale_id INT NOT NULL,
+    glasses_id INT NOT NULL,
+    quantity INT DEFAULT 1,
+    CONSTRAINT fk_detail_sale 
+        FOREIGN KEY (sale_id) REFERENCES sale(sale_id) ON DELETE CASCADE,
+    CONSTRAINT fk_detail_glasses 
+        FOREIGN KEY (glasses_id) REFERENCES glasses(glasses_id)
+);
+
 
 
 

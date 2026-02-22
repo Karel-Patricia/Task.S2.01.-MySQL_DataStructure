@@ -1,5 +1,4 @@
--- 1. Lista el total de facturas de un cliente/a en un período determinado.
-SELECT 
+SELECT
     c.name AS customer_name,
     COUNT(s.sale_id) AS total_invoices
 FROM sale s
@@ -9,7 +8,6 @@ WHERE c.customer_id = 1
 GROUP BY c.customer_id, c.name;
 
 
--- 2. Lista los diferentes modelos de gafas que ha vendido un empleado durante un año.
 SELECT DISTINCT
 	e.name AS Employee,
     b.name AS brand,
@@ -25,7 +23,6 @@ WHERE e.employee_id = 1
 ORDER BY b.name, g.frame_type;
 
 
--- 3. Lista a los diferentes proveedores que han suministrado gafas vendidas con éxito por la óptica.
 SELECT DISTINCT
     sup.name AS supplier_name,
     sup.nif,
